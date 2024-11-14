@@ -8,7 +8,7 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 🟢 直连
-    url: ""
+    url: "http://10.10.10.9:3001/8vtmpf6DhLxCCVSUR1ut/download/collection/%E5%85%A8%E9%83%A8%E8%8A%82%E7%82%B9"
       
 # 用于下载订阅时指定UA
 global-ua: clash
@@ -123,10 +123,10 @@ proxies:
   udp: true
  
 # 锚点
-pr: &pr {type: select, proxies: [🚀 节点选择, 🇭🇰 香港故转, 🇹🇼 台湾故转, 🇸🇬 新加坡故转, 🇯🇵 日本故转, 🇰🇷 韩国故转, 🇺🇲 美国故转, 🇭🇰 香港自动, 🇹🇼 台湾自动, 🇸🇬 新加坡自动, 🇯🇵 日本自动, 🇰🇷 韩国自动, 🇺🇲 美国自动, ♻️ 自动选择, 🇭🇰 香港节点, 🇹🇼 台湾节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点, 🇰🇷 韩国节点, 🇺🇲 美国节点, 🚀 其他国家, 🚀 手动切换, 🟢 直连]}
+pr: &pr {type: select, proxies: [🚀 节点选择, ♻️ 自动选择, 🚀 手动切换, 🇭🇰 香港自动, 🇹🇼 台湾自动, 🇸🇬 新加坡自动, 🇯🇵 日本自动, 🇰🇷 韩国自动, 🇺🇲 美国自动, 🇭🇰 香港节点, 🇹🇼 台湾节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点, 🇰🇷 韩国节点, 🇺🇲 美国节点, 🚀 其他国家, 🇭🇰 香港故转, 🇹🇼 台湾故转, 🇸🇬 新加坡故转, 🇯🇵 日本故转, 🇰🇷 韩国故转, 🇺🇲 美国故转, 🟢 直连]}
 # 策略组
 proxy-groups:
-  - {name: 🚀 节点选择, type: select, proxies: [🇭🇰 香港故转, 🇹🇼 台湾故转, 🇸🇬 新加坡故转, 🇯🇵 日本故转, 🇰🇷 韩国故转, 🇺🇲 美国故转, 🇭🇰 香港自动, 🇹🇼 台湾自动, 🇸🇬 新加坡自动, 🇯🇵 日本自动, 🇰🇷 韩国自动, 🇺🇲 美国自动, ♻️ 自动选择, 🇭🇰 香港节点, 🇹🇼 台湾节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点, 🇰🇷 韩国节点, 🇺🇲 美国节点, 🚀 其他国家, 🚀 手动切换, 🟢 直连]}
+  - {name: 🚀 节点选择, type: select, proxies: [♻️ 自动选择, 🚀 手动切换, 🇭🇰 香港自动, 🇹🇼 台湾自动, 🇸🇬 新加坡自动, 🇯🇵 日本自动, 🇰🇷 韩国自动, 🇺🇲 美国自动, 🇭🇰 香港节点, 🇹🇼 台湾节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点, 🇰🇷 韩国节点, 🇺🇲 美国节点, 🚀 其他国家, 🇭🇰 香港故转, 🇹🇼 台湾故转, 🇸🇬 新加坡故转, 🇯🇵 日本故转, 🇰🇷 韩国故转, 🇺🇲 美国故转, 🟢 直连]}
   - {name: ♻️ 自动选择, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "^((?!(直连)).)*$"}
   - {name: 🚀 手动切换, type: select, include-all: true}
   - {name: 📹 YouTube,!!merge <<: *pr}
@@ -150,18 +150,18 @@ proxy-groups:
   - {name: 🇰🇷 韩国节点, type: select, include-all: true, filter: "(?i)韩|kr|korea"}
   - {name: 🇺🇲 美国节点, type: select, include-all: true, filter: "(?i)美|us|unitedstates|united states"}
   - {name: 🚀 其他国家, type: select, include-all: true, filter: "^((?!(直连|港|台|日|韩|新|深|美)).)*$"}
-  - {name: 🇭🇰 香港故转, type: fallback, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|深|美)).)*$"}
-  - {name: 🇹🇼 台湾故转, type: fallback, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(台|TW|(?i)Twaiwan))^((?!(港|日|韩|新|深|美)).)*$"}
-  - {name: 🇸🇬 新加坡故转, type: fallback, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(新|SG|(?i)Singapore))^((?!(港|台|日|韩|深|美)).)*$"}
-  - {name: 🇯🇵 日本故转, type: fallback, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(日|JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$" }
-  - {name: 🇰🇷 韩国故转, type: fallback, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(韩|KR|(?i)Korea))^((?!(港|台|日|新|美)).)*$" }
-  - {name: 🇺🇲 美国故转, type: fallback, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(美|US|(?i)States|America))^((?!(港|台|日|韩|新)).)*$"}
   - {name: 🇭🇰 香港自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|深|美)).)*$"}
   - {name: 🇹🇼 台湾自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(台|TW|(?i)Twaiwan))^((?!(港|日|韩|新|深|美)).)*$"}
   - {name: 🇸🇬 新加坡自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(新|SG|(?i)Singapore))^((?!(港|台|日|韩|深|美)).)*$"}
   - {name: 🇯🇵 日本自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(日|JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$" }
   - {name: 🇰🇷 韩国自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(韩|KR|(?i)Korea))^((?!(港|台|日|新|美)).)*$" }
   - {name: 🇺🇲 美国自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(美|US|(?i)States|America))^((?!(港|台|日|韩|新)).)*$"}
+  - {name: 🇭🇰 香港故转, type: fallback, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|深|美)).)*$"}
+  - {name: 🇹🇼 台湾故转, type: fallback, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(台|TW|(?i)Twaiwan))^((?!(港|日|韩|新|深|美)).)*$"}
+  - {name: 🇸🇬 新加坡故转, type: fallback, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(新|SG|(?i)Singapore))^((?!(港|台|日|韩|深|美)).)*$"}
+  - {name: 🇯🇵 日本故转, type: fallback, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(日|JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$" }
+  - {name: 🇰🇷 韩国故转, type: fallback, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(韩|KR|(?i)Korea))^((?!(港|台|日|新|美)).)*$" }
+  - {name: 🇺🇲 美国故转, type: fallback, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(美|US|(?i)States|America))^((?!(港|台|日|韩|新)).)*$"}
 rules:
   - RULE-SET,private_domain,🟢 直连
   - RULE-SET,apple_domain,🍎 Apple
