@@ -9,7 +9,7 @@ proxy-providers:
       interval: 300
     proxy: 🟢 直连
     url: "http://10.10.10.9:3001/8vtmpf6DhLxCCVSUR1ut/download/collection/%E5%85%A8%E9%83%A8%E8%8A%82%E7%82%B9"
-      
+
 # 用于下载订阅时指定UA
 global-ua: clash
     
@@ -123,12 +123,13 @@ proxies:
   udp: true
  
 # 锚点
-pr: &pr {type: select, proxies: [🚀 节点选择, ♻️ 自动选择, 🚀 手动切换, 🇭🇰 香港自动, 🇹🇼 台湾自动, 🇸🇬 新加坡自动, 🇯🇵 日本自动, 🇰🇷 韩国自动, 🇺🇲 美国自动, 🇭🇰 香港节点, 🇹🇼 台湾节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点, 🇰🇷 韩国节点, 🇺🇲 美国节点, 🚀 其他国家, 🇭🇰 香港故转, 🇹🇼 台湾故转, 🇸🇬 新加坡故转, 🇯🇵 日本故转, 🇰🇷 韩国故转, 🇺🇲 美国故转, 🟢 直连]}
+pr: &pr {type: select, proxies: [🚀 节点选择, 🚀 手动切换, ♻️ 自动选择, 🚀 IPV6节点, 🇭🇰 香港自动, 🇹🇼 台湾自动, 🇸🇬 新加坡自动, 🇯🇵 日本自动, 🇰🇷 韩国自动, 🇺🇲 美国自动, 🇭🇰 香港节点, 🇹🇼 台湾节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点, 🇰🇷 韩国节点, 🇺🇲 美国节点, 🚀 其他国家, 🇭🇰 香港故转, 🇹🇼 台湾故转, 🇸🇬 新加坡故转, 🇯🇵 日本故转, 🇰🇷 韩国故转, 🇺🇲 美国故转, 🟢 直连]}
 # 策略组
 proxy-groups:
-  - {name: 🚀 节点选择, type: select, proxies: [♻️ 自动选择, 🚀 手动切换, 🇭🇰 香港自动, 🇹🇼 台湾自动, 🇸🇬 新加坡自动, 🇯🇵 日本自动, 🇰🇷 韩国自动, 🇺🇲 美国自动, 🇭🇰 香港节点, 🇹🇼 台湾节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点, 🇰🇷 韩国节点, 🇺🇲 美国节点, 🚀 其他国家, 🇭🇰 香港故转, 🇹🇼 台湾故转, 🇸🇬 新加坡故转, 🇯🇵 日本故转, 🇰🇷 韩国故转, 🇺🇲 美国故转, 🟢 直连]}
-  - {name: ♻️ 自动选择, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "^((?!(直连)).)*$"}
+  - {name: 🚀 节点选择, type: select, proxies: [🚀 手动切换, ♻️ 自动选择, 🚀 IPV6节点, 🇭🇰 香港自动, 🇹🇼 台湾自动, 🇸🇬 新加坡自动, 🇯🇵 日本自动, 🇰🇷 韩国自动, 🇺🇲 美国自动, 🇭🇰 香港节点, 🇹🇼 台湾节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点, 🇰🇷 韩国节点, 🇺🇲 美国节点, 🚀 其他国家, 🇭🇰 香港故转, 🇹🇼 台湾故转, 🇸🇬 新加坡故转, 🇯🇵 日本故转, 🇰🇷 韩国故转, 🇺🇲 美国故转, 🟢 直连]}
   - {name: 🚀 手动切换, type: select, include-all: true}
+  - {name: ♻️ 自动选择, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "^((?!(直连)).)*$"}
+  - {name: 🚀 IPV6节点, type: url-test, include-all: true, filter: "(?i)v6|ipv6"}
   - {name: 📹 YouTube,!!merge <<: *pr}
   - {name: 🍀 Google,!!merge <<: *pr}
   - {name: 🤖 ChatGPT,!!merge <<: *pr}
@@ -138,9 +139,13 @@ proxy-groups:
   - {name: 🎵 TikTok,!!merge <<: *pr}
   - {name: 📲 Telegram,!!merge <<: *pr}
   - {name: 🎥 NETFLIX,!!merge <<: *pr}
+  - {name: 🎥 HBO,!!merge <<: *pr}
+  - {name: 🎥 Disney,!!merge <<: *pr}
+  - {name: 🎥 Prime,!!merge <<: *pr}
+  - {name: 🎥 Hulu,!!merge <<: *pr}
   - {name: ✈️ Speedtest,!!merge <<: *pr}
   - {name: 💶 PayPal,!!merge <<: *pr}
-  - {name: 🍎 Apple,!!merge <<: *pr}
+  - {name: 🍎 Apple,!!merge <<: *pr} 
   - {name: 🎯 全球直连, type: select, proxies: [🟢 直连, 🚀 节点选择]}
   - {name: 🐟 漏网之鱼,!!merge <<: *pr}
   - {name: 🇭🇰 香港节点, type: select, include-all: true, filter: "(?i)港|hk|hongkong|hong kong"}
@@ -176,6 +181,10 @@ rules:
   - RULE-SET,speedtest_domain,✈️ Speedtest
   - RULE-SET,telegram_domain,📲 Telegram
   - RULE-SET,netflix_domain,🎥 NETFLIX
+  - RULE-SET,hbo_domain,🎥 HBO
+  - RULE-SET,disney_domain,🎥 Disney
+  - RULE-SET,prime_domain,🎥 Prime
+  - RULE-SET,hulu_domain,🎥 Hulu
   - RULE-SET,paypal_domain,💶 PayPal
   - RULE-SET,geolocation-!cn,🚀 节点选择
   - RULE-SET,cn_domain,🎯 全球直连
@@ -198,6 +207,10 @@ rule-providers:
   github_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.mrs"}
   telegram_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.mrs"}
   netflix_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.mrs"}
+  hbo_domain: {!!merge <<: *domain, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/hbo.mrs"}
+  disney_domain: {!!merge <<: *domain, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/disney.mrs"}
+  prime_domain: {!!merge <<: *domain, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/primevideo.mrs"}
+  hulu_domain: {!!merge <<: *domain, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/hulu.mrs"}
   paypal_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/paypal.mrs"}
   onedrive_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/onedrive.mrs"}
   microsoft_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.mrs"}
