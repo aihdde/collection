@@ -13,11 +13,11 @@ http://10.10.10.3:18888/udp/239.69.1.122:10370
 http://10.10.10.3:18888/udp/239.254.96.155:9004
 #EXTINF:-1 tvg-id="4" tvg-name="CCTV4" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV4.png" group-title="央视",CCTV4HD
 http://10.10.10.3:18888/udp/239.69.1.138:10466
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="央视",CCTV5HD
+#EXTINF:-1 tvg-id="CCTV5" tvg-name="" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV5.png" group-title="央视",CCTV5HD
 http://10.10.10.3:18888/udp/239.69.1.123:10376
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="央视",CCTV5十
+#EXTINF:-1 tvg-id="CCTV5" tvg-name="" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV5.png" group-title="央视",CCTV5十
 http://10.10.10.3:18888/udp/239.254.96.99:8568
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="央视",CCTV5十HD
+#EXTINF:-1 tvg-id="CCTV5" tvg-name="" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV5.png" group-title="央视",CCTV5十HD
 http://10.10.10.3:18888/udp/239.254.96.234:9484
 #EXTINF:-1 tvg-id="7" tvg-name="CCTV6" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV6.png" group-title="央视",CCTV6HD
 http://10.10.10.3:18888/udp/239.69.1.124:10382
@@ -177,9 +177,9 @@ http://10.10.10.3:18888/udp/239.69.1.40:9880
 http://10.10.10.3:18888/udp/239.254.96.180:9160
 #EXTINF:-1 tvg-id="1780" tvg-name="湖北教育频道" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/HUBEI4.png" group-title="湖北",湖北教育HD
 http://10.10.10.3:18888/udp/239.69.1.206:10878
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="未分类",湖北经视
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="http://epg.51zmt.top:8000/tb1/qt/HUBEI8.png" group-title="湖北",湖北经视
 http://10.10.10.3:18888/udp/239.254.96.178:9148
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="未分类",湖北经视HD
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="http://epg.51zmt.top:8000/tb1/qt/HUBEI8.png" group-title="湖北",湖北经视HD
 http://10.10.10.3:18888/udp/239.69.1.41:9886
 #EXTINF:-1 tvg-id="1785" tvg-name="湖北垄上频道" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/HBLS.png" group-title="湖北",湖北垄上
 http://10.10.10.3:18888/udp/239.254.96.184:9184
