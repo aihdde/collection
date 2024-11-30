@@ -65,7 +65,6 @@ sniffer:
   force-domain:
     - +.v2ex.com
   skip-domain:
-    - "Mijia Cloud"
     - "dlg.io.mi.com"
     - "+.push.apple.com"
     - "+.apple.com"
@@ -110,8 +109,8 @@ dns:
     - 119.29.29.29
   nameserver-policy:
     "rule-set:private_domain,cn_domain":
-    - 223.5.5.5
-    - 119.29.29.29
+      - 223.5.5.5
+      - 119.29.29.29
     "rule-set:geolocation-!cn":
       - "https://dns.cloudflare.com/dns-query"
       - "https://dns.google/dns-query"
@@ -126,7 +125,7 @@ proxies:
 pr: &pr {type: select, proxies: [🚀 节点选择, 🚀 手动切换, ♻️ 自动选择, 🚀 IPV6节点, 🇭🇰 香港自动, 🇹🇼 台湾自动, 🇸🇬 新加坡自动, 🇯🇵 日本自动, 🇰🇷 韩国自动, 🇺🇲 美国自动, 🇭🇰 香港节点, 🇹🇼 台湾节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点, 🇰🇷 韩国节点, 🇺🇲 美国节点, 🚀 其他国家, 🇭🇰 香港故转, 🇹🇼 台湾故转, 🇸🇬 新加坡故转, 🇯🇵 日本故转, 🇰🇷 韩国故转, 🇺🇲 美国故转, 🟢 直连]}
 # 策略组
 proxy-groups:
-  - {name: 🚀 节点选择, type: select, proxies: [🚀 手动切换, ♻️ 自动选择, 🚀 IPV6节点, 🇭🇰 香港自动, 🇹🇼 台湾自动, 🇸🇬 新加坡自动, 🇯🇵 日本自动, 🇰🇷 韩国自动, 🇺🇲 美国自动, 🇭🇰 香港节点, 🇹🇼 台湾节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点, 🇰🇷 韩国节点, 🇺🇲 美国节点, 🚀 其他国家, 🇭🇰 香港故转, 🇹🇼 台湾故转, 🇸🇬 新加坡故转, 🇯🇵 日本故转, 🇰🇷 韩国故转, 🇺🇲 美国故转, 🟢 直连]}
+  - {name: 🚀 节点选择, type: select, proxies: [♻️ 自动选择, 🚀 手动切换, 🚀 IPV6节点, 🇭🇰 香港自动, 🇹🇼 台湾自动, 🇸🇬 新加坡自动, 🇯🇵 日本自动, 🇰🇷 韩国自动, 🇺🇲 美国自动, 🇭🇰 香港节点, 🇹🇼 台湾节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点, 🇰🇷 韩国节点, 🇺🇲 美国节点, 🚀 其他国家, 🇭🇰 香港故转, 🇹🇼 台湾故转, 🇸🇬 新加坡故转, 🇯🇵 日本故转, 🇰🇷 韩国故转, 🇺🇲 美国故转, 🟢 直连]}
   - {name: 🚀 手动切换, type: select, include-all: true}
   - {name: ♻️ 自动选择, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "^((?!(直连)).)*$"}
   - {name: 🚀 IPV6节点, type: url-test, include-all: true, filter: "(?i)v6|ipv6"}
@@ -148,27 +147,28 @@ proxy-groups:
   - {name: 🍎 Apple,!!merge <<: *pr} 
   - {name: 🎯 全球直连, type: select, proxies: [🟢 直连, 🚀 节点选择]}
   - {name: 🐟 漏网之鱼,!!merge <<: *pr}
-  - {name: 🇭🇰 香港节点, type: select, include-all: true, filter: "(?i)港|hk|hongkong|hong kong"}
-  - {name: 🇹🇼 台湾节点, type: select, include-all: true, filter: "(?i)台|tw|taiwan"}
-  - {name: 🇸🇬 新加坡节点, type: select, include-all: true, filter: "(?i)新|新加坡|sg|singapore"}
-  - {name: 🇯🇵 日本节点, type: select, include-all: true, filter: "(?i)日|jp|japan"}
-  - {name: 🇰🇷 韩国节点, type: select, include-all: true, filter: "(?i)韩|kr|korea"}
-  - {name: 🇺🇲 美国节点, type: select, include-all: true, filter: "(?i)美|us|unitedstates|united states"}
+  - {name: 🇭🇰 香港节点, type: select, include-all: true, filter: "(?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|深|美)).)*$"}
+  - {name: 🇹🇼 台湾节点, type: select, include-all: true, filter: "(?=.*(台|TW|(?i)Twaiwan))^((?!(港|日|韩|新|深|美)).)*$"}
+  - {name: 🇸🇬 新加坡节点, type: select, include-all: true, filter: "(?=.*(新|SG|(?i)Singapore))^((?!(港|台|日|韩|深|美|刷新)).)*$"}
+  - {name: 🇯🇵 日本节点, type: select, include-all: true, filter: "(?=.*(日|JP|(?i)Japan))^((?!(港|台|韩|新|美|刷新)).)*$" }
+  - {name: 🇰🇷 韩国节点, type: select, include-all: true, filter: "(?=.*(韩|KR|(?i)Korea))^((?!(港|台|日|新|美)).)*$" }
+  - {name: 🇺🇲 美国节点, type: select, include-all: true, filter: "(?=.*(美|US|(?i)States|America))^((?!(港|台|日|韩|新)).)*$"}
   - {name: 🚀 其他国家, type: select, include-all: true, filter: "^((?!(直连|港|台|日|韩|新|深|美)).)*$"}
   - {name: 🇭🇰 香港自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|深|美)).)*$"}
   - {name: 🇹🇼 台湾自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(台|TW|(?i)Twaiwan))^((?!(港|日|韩|新|深|美)).)*$"}
-  - {name: 🇸🇬 新加坡自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(新|SG|(?i)Singapore))^((?!(港|台|日|韩|深|美)).)*$"}
-  - {name: 🇯🇵 日本自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(日|JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$" }
+  - {name: 🇸🇬 新加坡自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(新|SG|(?i)Singapore))^((?!(港|台|日|韩|深|美|刷新)).)*$"}
+  - {name: 🇯🇵 日本自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(日|JP|(?i)Japan))^((?!(港|台|韩|新|美|刷新)).)*$" }
   - {name: 🇰🇷 韩国自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(韩|KR|(?i)Korea))^((?!(港|台|日|新|美)).)*$" }
   - {name: 🇺🇲 美国自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(美|US|(?i)States|America))^((?!(港|台|日|韩|新)).)*$"}
   - {name: 🇭🇰 香港故转, type: fallback, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|深|美)).)*$"}
   - {name: 🇹🇼 台湾故转, type: fallback, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(台|TW|(?i)Twaiwan))^((?!(港|日|韩|新|深|美)).)*$"}
-  - {name: 🇸🇬 新加坡故转, type: fallback, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(新|SG|(?i)Singapore))^((?!(港|台|日|韩|深|美)).)*$"}
+  - {name: 🇸🇬 新加坡故转, type: fallback, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(新|SG|(?i)Singapore))^((?!(港|台|日|韩|深|美|刷新)).)*$"}
   - {name: 🇯🇵 日本故转, type: fallback, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(日|JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$" }
   - {name: 🇰🇷 韩国故转, type: fallback, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(韩|KR|(?i)Korea))^((?!(港|台|日|新|美)).)*$" }
   - {name: 🇺🇲 美国故转, type: fallback, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(美|US|(?i)States|America))^((?!(港|台|日|韩|新)).)*$"}
 rules:
   - RULE-SET,private_domain,🟢 直连
+  - RULE-SET,direct_domain,🟢 直连
   - RULE-SET,apple_domain,🍎 Apple
   - RULE-SET,proxylite,🚀 节点选择
   - RULE-SET,ai,🤖 ChatGPT
@@ -191,7 +191,7 @@ rules:
   - RULE-SET,google_ip,🍀 Google,no-resolve
   - RULE-SET,netflix_ip,🎥 NETFLIX,no-resolve
   - RULE-SET,telegram_ip,📲 Telegram,no-resolve
-  - RULE-SET,cn_ip,🎯 全球直连
+  - RULE-SET,cn_ip,🎯 全球直连,no-resolve
   - MATCH,🐟 漏网之鱼
 rule-anchor:
   ip: &ip {type: http, interval: 86400, behavior: ipcidr, format: mrs}
@@ -200,8 +200,9 @@ rule-anchor:
   class: &class {type: http, interval: 86400, behavior: classical, format: text}
 rule-providers: 
   private_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"}
-  proxylite: {!!merge <<: *class, url: "https://raw.githubusercontent.com/qichiyuhub/rule/refs/heads/master/ProxyLite.list"}
-  ai: {!!merge <<: *class, url: "https://raw.githubusercontent.com/qichiyuhub/rule/refs/heads/master/AI.list"}
+  direct_domain: {!!merge <<: *class, url: "https://github.com/aihdde/mihomo_rule/raw/refs/heads/master/Direct.list"}
+  proxylite: {!!merge <<: *class, url: "https://github.com/aihdde/mihomo_rule/raw/refs/heads/master/ProxyLite.list"}
+  ai: {!!merge <<: *class, url: "https://github.com/aihdde/mihomo_rule/raw/refs/heads/master/AI.list"}
   youtube_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"}
   google_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs"}
   github_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.mrs"}
