@@ -1,4 +1,4 @@
-#EXTM3U
+#EXTM3U name="武汉电信IPTV"
 #EXTINF:-1 tvg-id="1" tvg-name="CCTV1" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV1.png" group-title="央视",CCTV1HD
 http://10.10.10.3:18888/udp/239.254.96.96:8550
 #EXTINF:-1 tvg-id="2" tvg-name="CCTV2" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV2.png" group-title="央视",CCTV2HD
@@ -7,13 +7,13 @@ http://10.10.10.3:18888/udp/239.69.1.102:10250
 http://10.10.10.3:18888/udp/239.69.1.122:10370
 #EXTINF:-1 tvg-id="4" tvg-name="CCTV4" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV4.png" group-title="央视",CCTV4HD
 http://10.10.10.3:18888/udp/239.69.1.138:10466
-#EXTINF:-1 tvg-id="106" tvg-name="CCTV4K" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV4k.png" group-title="地方",CCTV4K
+#EXTINF:-1 tvg-id="106" tvg-name="CCTV4K" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV4k.png" group-title="央视",CCTV4K
 http://10.10.10.3:18888/udp/239.69.1.111:10304
 #EXTINF:-1 tvg-id="4" tvg-name="CCTV4" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV4.png" group-title="央视",CCTV4中文国际欧洲HD
 http://10.10.10.3:18888/udp/239.69.1.231:11028
 #EXTINF:-1 tvg-id="4" tvg-name="CCTV4" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV4.png" group-title="央视",CCTV4中文国际美洲HD
 http://10.10.10.3:18888/udp/239.69.1.232:11034
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="未分类",CCTV5HD
+#EXTINF:-1 tvg-id="5" tvg-name="CCTV5" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV5.png" group-title="央视",CCTV5HD
 http://10.10.10.3:18888/udp/239.69.1.123:10376
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="未分类",魅力足球HD
 http://10.10.10.3:18888/udp/239.69.2.7:11196
@@ -153,7 +153,7 @@ http://10.10.10.3:18888/udp/239.69.1.204:10866
 http://10.10.10.3:18888/udp/239.69.1.206:10878
 #EXTINF:-1 tvg-id="1781" tvg-name="湖北生活频道" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/HUBEI5.png" group-title="湖北",湖北生活HD
 http://10.10.10.3:18888/udp/239.69.1.205:10872
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="未分类",湖北经视HD
+#EXTINF:-1 tvg-id="1784" tvg-name="湖北经济频道" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/HUBEI8.png" group-title="湖北",湖北经视HD
 http://10.10.10.3:18888/udp/239.69.1.41:9886
 #EXTINF:-1 tvg-id="1778" tvg-name="湖北综合频道" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/HUBEI2.png" group-title="湖北",湖北综合HD
 http://10.10.10.3:18888/udp/239.69.1.42:9892
