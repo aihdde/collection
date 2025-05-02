@@ -61,6 +61,8 @@ http://10.10.10.3:18888/udp/239.254.96.175:9124
 http://10.10.10.3:18888/udp/239.69.1.234:11046
 #EXTINF:-1 tvg-id="20" tvg-name="CGTN" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/cgtn.png" group-title="央视",CGTN阿拉伯语
 http://10.10.10.3:18888/udp/239.69.1.221:10968
+#EXTINF:-1 tvg-id="6560" tvg-name="世界地理" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTVshijiedili.png" group-title="央视",世界地理
+http://10.10.10.3:18888/udp/239.69.1.91:10186
 #EXTINF:-1 tvg-id="6563" tvg-name="兵器科技" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/CCTVPAYFEE8.jpg" group-title="央视",兵器科技
 http://10.10.10.3:18888/udp/239.69.1.79:10114
 #EXTINF:-1 tvg-id="6584" tvg-name="央视台球" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTVtaiqiu.png" group-title="央视",央视台球
@@ -183,8 +185,6 @@ http://10.10.10.3:18888/udp/239.69.1.146:10512
 http://10.10.10.3:18888/udp/239.69.1.251:11148
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="未分类",iTV导视
 http://10.10.10.3:18888/udp/239.69.1.65:10030
-#EXTINF:-1 tvg-id="6560" tvg-name="世界地理" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTVshijiedili.png" group-title="地方",世界地理
-http://10.10.10.3:18888/udp/239.69.1.91:10186
 #EXTINF:-1 tvg-id="" tvg-name="东方财经" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/东方财经.png" group-title="上海",东方财经
 http://10.10.10.3:18888/udp/239.69.2.9:11208
 #EXTINF:-1 tvg-id="" tvg-name="中华特产" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/中华特产.png" group-title="地方",中华特产
