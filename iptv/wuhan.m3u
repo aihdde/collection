@@ -15,6 +15,8 @@ http://10.10.10.3:18888/udp/239.69.1.231:11028
 http://10.10.10.3:18888/udp/239.69.1.232:11034
 #EXTINF:-1 tvg-id="5" tvg-name="CCTV5" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV5.png" group-title="央视",CCTV5HD
 http://10.10.10.3:18888/udp/239.69.1.123:10376
+#EXTINF:-1 tvg-id="6" tvg-name="CCTV5+" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV5+.png" group-title="央视",CCTV5十HD
+http://10.10.10.3:18888/udp/239.254.96.234:9484
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="未分类",魅力足球HD
 http://10.10.10.3:18888/udp/239.69.2.7:11196
 #EXTINF:-1 tvg-id="7" tvg-name="CCTV6" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV6.png" group-title="央视",CCTV6HD
