@@ -1,4 +1,4 @@
-#EXTM3U name="武汉电信IPTV"
+#EXTM3U x-tvg-url="http://epg.51zmt.top:8000/e.xml" name="武汉电信IPTV"
 #EXTINF:-1 tvg-id="1" tvg-name="CCTV1" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV1.png" group-title="央视",CCTV1
 http://10.10.10.3:18888/udp/239.254.96.96:8550
 #EXTINF:-1 tvg-id="2" tvg-name="CCTV2" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV2.png" group-title="央视",CCTV2
