@@ -81,7 +81,7 @@ http://10.10.10.3:18888/udp/239.69.2.20:11274
 http://10.10.10.3:18888/udp/239.69.2.19:11268
 #EXTINF:-1 tvg-name="安徽卫视" tvg-id="安徽卫视" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/anhui.png" group-title="卫视",安徽卫视
 http://10.10.10.3:18888/udp/239.69.1.70:10060
-#EXTINF:-1 tvg-name="北京卫视" tvg-id="北京卫视" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/beijing.png" group-title="卫视",北京卫视
+#EXTINF:-1 tvg-name="北京卫视" tvg-id="北京卫视" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/beijing.png" group-title="卫视",北京卫视 4K
 http://10.10.10.3:18888/udp/239.69.2.22:11286
 #EXTINF:-1 tvg-name="北京卫视" tvg-id="北京卫视" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/beijing.png" group-title="卫视",北京卫视
 http://10.10.10.3:18888/udp/239.254.96.141:8920
