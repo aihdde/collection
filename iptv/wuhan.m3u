@@ -217,7 +217,7 @@ http://10.10.10.3:18888/udp/239.69.2.6:11190
 http://10.10.10.3:18888/udp/239.69.1.193:10800
 #EXTINF:-1 tvg-name="四海钓鱼" tvg-id="四海钓鱼" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/BAMC4.jpg" group-title="地方",四海钓鱼
 http://10.10.10.3:18888/udp/239.69.1.244:11106
-#EXTINF:-1 tvg-name="国学频道" tvg-id="国学频道" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/SHUOWENJIEZI.jpg" group-title="地方",国学频道
+#EXTINF:-1 tvg-name="国学" tvg-id="国学" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/SHUOWENJIEZI.jpg" group-title="地方",国学频道
 http://10.10.10.3:18888/udp/239.254.96.194:9244
 #EXTINF:-1 tvg-name="央广购物" tvg-id="央广购物" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/央广购物.png" group-title="地方",央广购物
 http://10.10.10.3:18888/udp/239.69.2.1:11160
