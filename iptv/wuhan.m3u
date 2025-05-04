@@ -51,7 +51,7 @@ http://10.10.10.3:18888/udp/239.69.1.74:10084
 http://10.10.10.3:18888/udp/239.254.96.175:9124
 #EXTINF:-1 tvg-name="CGTN俄语" tvg-id="CGTN俄语" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/CGTN俄语.png" group-title="央视",CGTN 俄语
 http://10.10.10.3:18888/udp/239.69.1.222:10974
-#EXTINF:-1 tvg-name="CGTN法语" tvg-id="CGTN俄语" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/CGTN法语.png" group-title="央视",CGTN 法语
+#EXTINF:-1 tvg-name="CGTN法语" tvg-id="CGTN法语" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/CGTN法语.png" group-title="央视",CGTN 法语
 http://10.10.10.3:18888/udp/239.69.1.235:11052
 #EXTINF:-1 tvg-name="CGTN纪录" tvg-id="CGTN纪录" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/CGTN纪录.png" group-title="央视",CGTN 英文纪录
 http://10.10.10.3:18888/udp/239.69.1.233:11040
