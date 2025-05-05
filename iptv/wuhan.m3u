@@ -79,6 +79,8 @@ http://10.10.10.3:18888/udp/239.69.2.20:11274
 http://10.10.10.3:18888/udp/239.69.2.19:11268
 #EXTINF:-1 tvg-id="凤凰香港" tvg-name="凤凰香港" http-user-agent="iPhone" group-title="卫视IPV4",凤凰香港
 http://148.135.93.213/phenix.php?id=fhhk
+#EXTINF:-1 tvg-id="香港卫视" tvg-name="香港卫视" tvg-logo="https://epg.aptv.app/logo/香港卫视.png" group-title="卫视IPV4",香港卫视
+http://148.135.93.213/live.php?id=香港卫视
 #EXTINF:-1 tvg-name="安徽卫视" tvg-id="安徽卫视" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/anhui.png" group-title="卫视",安徽卫视
 http://10.10.10.3:18888/udp/239.69.1.70:10060
 #EXTINF:-1 tvg-name="北京卫视" tvg-id="北京卫视" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/beijing.png" group-title="卫视",北京卫视 4K
@@ -143,8 +145,6 @@ http://10.10.10.3:18888/udp/239.254.96.93:8532
 http://10.10.10.3:18888/udp/239.254.96.137:8896
 #EXTINF:-1 tvg-name="天津卫视" tvg-id="天津卫视" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/tianjin.png" group-title="卫视",天津卫视
 http://10.10.10.3:18888/udp/239.69.1.68:10048
-#EXTINF:-1 tvg-id="香港卫视" tvg-name="香港卫视" tvg-logo="https://epg.aptv.app/logo/香港卫视.png" group-title="卫视IPV4",香港卫视
-http://148.135.93.213/live.php?id=香港卫视
 #EXTINF:-1 tvg-name="新疆卫视" tvg-id="新疆卫视" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/xinjiang.png" group-title="卫视",新疆卫视
 http://10.10.10.3:18888/udp/239.254.96.47:8256
 #EXTINF:-1 tvg-name="厦门卫视" tvg-id="厦门卫视" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/xiamen.png" group-title="卫视",厦门卫视
