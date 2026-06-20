@@ -37,9 +37,9 @@ http://10.10.10.3:18888/udp/239.254.96.161:9040
 http://10.10.10.3:18888/udp/239.69.1.107:10280
 #EXTINF:-1 tvg-name="CCTV15" tvg-id="CCTV15" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV15.png" group-title="央视",CCTV-15 音乐
 http://10.10.10.3:18888/udp/239.69.1.155:10566
-#EXTINF:-1 tvg-name="CCTV16" tvg-id="CCTV16" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV2.png" group-title="央视",CCTV-16 奥林匹克
+#EXTINF:-1 tvg-name="CCTV16" tvg-id="CCTV16" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV16.png" group-title="央视",CCTV-16 奥林匹克
 http://10.10.10.3:18888/udp/239.69.1.247:11124
-#EXTINF:-1 tvg-name="CCTV16" tvg-id="CCTV164K" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV2.png" group-title="央视",CCTV-16 奥林匹克4K
+#EXTINF:-1 tvg-name="CCTV16" tvg-id="CCTV164K" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV16.png" group-title="央视",CCTV-16 奥林匹克4K
 http://10.10.10.3:18888/udp/239.69.1.249:11136
 #EXTINF:-1 tvg-name="CCTV17" tvg-id="CCTV17" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV17.png" group-title="央视",CCTV-17 农业农村
 http://10.10.10.3:18888/udp/239.69.1.152:10548
