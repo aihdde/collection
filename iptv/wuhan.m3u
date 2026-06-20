@@ -219,6 +219,8 @@ http://10.10.10.3:18888/udp/239.69.1.37:9862
 http://10.10.10.3:18888/udp/239.69.2.6:11190
 #EXTINF:-1 tvg-name="都市剧场" tvg-id="都市剧场" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/都市剧场.png" group-title="地方",都市剧场
 http://10.10.10.3:18888/udp/239.69.2.4:11178
+#EXTINF:-1 tvg-id="翡翠台" tvg-name="翡翠台" http-user-agent="AptvPlayer-UA" group-title="卫视IPV4",翡翠台
+http://101.35.240.114:88/live.php?id=翡翠台
 #EXTINF:-1 tvg-name="风云剧场" tvg-id="风云剧场" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTBfengyun.png" group-title="数字付费",风云剧场
 http://10.10.10.3:18888/udp/239.69.2.53:11472
 #EXTINF:-1 tvg-name="法治天地" tvg-id="法治天地" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/法治天地.png" group-title="地方",法治天地
